@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default theme */
+:root {
+  --color-background: #0d1117;
+  --color-text: #ffffff;
+  --color-selectedNavbarTab: #54b4f0;
+  --color-selectedNavbarText: #0d1117;
+  --color-navbar: #16181d9f;
+  --color-navbar-logoname: #ffffff;
+  --color-navbar-text: #ffffff;
+  --color-navbar-border: #0d1117;
+  --color-button: #4566de;
+  --color-buttonText: #ffffff;
+  --color-link: #ff63c3;
+}
+
+/* Black theme */
+.one {
+  --color-background: #000000;
+  --color-text: #e0e0e0;
+  --color-selectedNavbarTab: #3272dc;
+  --color-selectedNavbarText: #ffffff;
+  --color-navbar: #1c1c1e9d;
+  --color-navbar-logoname: #ffffff;
+  --color-navbar-text: #ffffff;
+  --color-navbar-border: #000000;
+  --color-button: #3272dc;
+  --color-buttonText: #ffffff;
+  --color-link: #ff63c3;
+}
+
+/* linkedinly */
+.two {
+  --color-background: #ffffff;
+  --color-text: #181818;
+  --color-selectedNavbarTab: #0e61b3;
+  --color-selectedNavbarText: #ffffff;
+  --color-navbar: #ffffff98;
+  --color-navbar-logoname: #181818;
+  --color-navbar-text: #181818;
+  --color-navbar-border: #e5e7eb;
+  --color-button: #006097;
+  --color-buttonText: #ffffff;
+  --color-link: #0004ff;
+}
+
+/* upworkly */
+.three {
+  --color-background: #ffffff;
+  --color-text: #535353;
+  --color-selectedNavbarTab: #108a00;
+  --color-selectedNavbarText: #ffffff;
+  --color-navbar: #ffffff;
+  --color-navbar-logoname: #535353;
+  --color-navbar-text: #535353;
+  --color-navbar-border: #e5e7eb;
+  --color-button: #108a00;
+  --color-buttonText: #ffffff;
+  --color-link: #006a17;
+}
+
+body {
+  background-color: theme("colors.background");
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 8rem;
+}
+
+div {
+  color: white;
+}
+
+@layer utilities {
+  .navbar-logo-name {
+    color: var(--color-navbar-logoname);
+    margin-left: 5px;
+    font-family: "M PLUS Rounded 1c", "Segoe UI", sans-serif;
+    font-size: 17px;
+    letter-spacing: -1px;
+  }
+}
+
+@layer utilities {
+  .brand-name {
+    color: var(--color-text);
+    margin-left: 5px;
+    font-family: "M PLUS Rounded 1c", "Segoe UI", sans-serif;
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  .project-name {
+    color: var(--color-text);
+    font-family: "M PLUS Rounded 1c", "Segoe UI", sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+
+  .custom-h2 {
+    color: var(--color-text);
+    margin-bottom: 15px;
+    padding-bottom: 16px;
+    font-family: "M PLUS Rounded 1c", "Segoe UI", sans-serif;
+    font-size: 25px;
+    letter-spacing: -1px;
+  }
+
+  .custom-h3 {
+    color: var(--color-text);
+    padding-bottom: 16px;
+    font-family: "M PLUS Rounded 1c", "Segoe UI", sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-decoration: underline;
+    text-decoration-color: #4f4f4f;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+  }
+
+  .custom-p {
+    color: var(--color-text);
+    text-align: justify;
+  }
+}
