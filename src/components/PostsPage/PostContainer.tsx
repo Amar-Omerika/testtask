@@ -2,13 +2,13 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface PostContainerProps {
-  imgSrc: StaticImageData | string;
+  imgSrc?: StaticImageData | string;
   title: string;
   description: string;
 }
 
 const PostContainer: React.FC<PostContainerProps> = ({
-  imgSrc,
+  imgSrc = "https://media.geeksforgeeks.org/wp-content/uploads/20240319155102/what-is-ai-artificial-intelligence.webp",
   title,
   description,
 }) => {
